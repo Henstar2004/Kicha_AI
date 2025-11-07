@@ -1,0 +1,23 @@
+<div class="container-section">
+  <h2 class="title">Available Containers</h2>
+
+  <!-- 🔍 Search bar -->
+  <input
+    type="text"
+    [(ngModel)]="searchText"
+    placeholder="Search container..."
+    class="search-input"
+  />
+
+  <!-- 🧱 Container cards -->
+  <div class="container-grid">
+    <div
+      class="container-card"
+      *ngFor="let item of containers "
+    >
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.description }}</p>
+    </div>
+  </div>
+</div>
+

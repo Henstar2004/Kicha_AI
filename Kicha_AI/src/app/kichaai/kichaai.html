@@ -1,0 +1,32 @@
+<nav class="navbar">
+  <div class="logo">MyApp</div>
+
+  <ul class="nav-links" [class.active]="isMenuOpen">
+   <li><a (click)="selectMode('home')">Home</a></li>
+    <li><a (click)="selectMode('container')">Container</a></li>
+    <li><a (click)="selectMode('settings')">Settings</a></li>
+    <li><a (click)="selectMode('contact')">Contact</a></li>
+  </ul>
+
+  <div class="menu-toggle" (click)="toggleMenu()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</nav>
+<div  *ngIf="kichahome">
+<app-kichahome ></app-kichahome>
+</div>
+
+
+<div *ngIf="kichacontainer">
+  <app-kichacontainer></app-kichacontainer>
+</div>
+
+<div *ngIf="kichaSettings">
+  <app-kichasettings></app-kichasettings>
+</div>
+
+<div *ngIf="kichaContact">
+  <app-kichacontact></app-kichacontact>
+</div>
