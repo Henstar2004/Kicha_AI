@@ -1,27 +1,27 @@
- package Mainpack;
- class searchResponse {
-
-    private boolean success;
-    private String discrption;
-    private String name;
-
-    public searchResponse(boolean success,String name, String discrption) {
-        this.success = success;
-        this.name = name;
-        this.discrption = discrption;
-    }
-    public boolean isSuccess() {
-        return success;
-    }
-
-    public String getname() {
-        return name;
-    }
-    public String getdiscrption() {
-        return discrption;
-    }
-
-}
+ package Kicha_Ai_Spring.Mainpack;
+// public class SearchResponse {
+//
+//    private boolean success;
+//    private String discrption;
+//    private String name;
+//
+//    public SearchResponse(boolean success,String name, String discrption) {
+//        this.success = success;
+//        this.name = name;
+//        this.discrption = discrption;
+//    }
+//    public boolean isSuccess() {
+//        return success;
+//    }
+//
+//    public String getname() {
+//        return name;
+//    }
+//    public String getdiscrption() {
+//        return discrption;
+//    }
+//
+//}
 
 
 

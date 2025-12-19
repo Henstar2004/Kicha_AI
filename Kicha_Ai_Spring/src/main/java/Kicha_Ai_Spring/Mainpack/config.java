@@ -1,4 +1,4 @@
-package Mainpack;
+package Kicha_Ai_Spring.Mainpack;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -12,11 +12,12 @@ public class config {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**") // allow all endpoints
-                        .allowedOrigins("http://localhost:4200") // Angular app URL
+                registry.addMapping("/**")
+                        .allowedOrigins("http://localhost:4200") // must be explicit
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
+
             }
         };
     }

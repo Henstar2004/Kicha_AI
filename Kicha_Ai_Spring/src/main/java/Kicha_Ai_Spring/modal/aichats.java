@@ -1,4 +1,4 @@
-package modal;
+package Kicha_Ai_Spring.modal;
 
 import jakarta.persistence.*;
 
