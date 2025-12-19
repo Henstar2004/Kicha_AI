@@ -22,7 +22,7 @@ this.getChatHistory()
     this.openai.getChatHistory().subscribe({
       next: (res) => {
         this.chats = res; 
-        this.containers.push(...this.chats)
+        this.containers.unshift(...this.chats)
                // save to component variable
         console.log('All chat history:', res);
         console.log('All chat history:', this.containers);

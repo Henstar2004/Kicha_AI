@@ -34,6 +34,7 @@ public class aicontroller {
 
     @GetMapping("/listchat")
     public List<aichats> listchat() {
+        System.out.println(aiService.getAllHistory());
         return aiService.getAllHistory();
     }
 

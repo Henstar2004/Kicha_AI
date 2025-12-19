@@ -18,10 +18,10 @@ public class aichats {
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
-    public String getPrompt() { return name; }
-    public void setPrompt(String name) { this.name = name; }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 
-    public String getReply() { return discription; }
-    public void setReply( String discription) { this.discription = discription; }
+    public String getDiscription() { return discription; }
+    public void setDiscription( String discription) { this.discription = discription; }
     
 }
