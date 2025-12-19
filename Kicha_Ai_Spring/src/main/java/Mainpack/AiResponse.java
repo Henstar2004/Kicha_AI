@@ -1,8 +1,6 @@
  package Mainpack;
  class searchResponse {
 
-
-  
     private boolean success;
     private String discrption;
     private String name;
@@ -12,7 +10,6 @@
         this.name = name;
         this.discrption = discrption;
     }
-
     public boolean isSuccess() {
         return success;
     }
@@ -24,7 +21,6 @@
         return discrption;
     }
 
-    
 }
 
 

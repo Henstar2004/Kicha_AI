@@ -3,11 +3,12 @@
 
   <!-- 🔍 Search bar -->
   <input
-    type="text"
-    [(ngModel)]="searchText"
-    placeholder="Search container..."
-    class="search-input"
-  />
+  type="text"
+  [(ngModel)]="searchText"
+  (ngModelChange)="onSearchChange($event)"
+  placeholder="Search container..."
+  class="search-input"
+/>
 
   <!-- 🧱 Container cards -->
   <div class="container-grid">
