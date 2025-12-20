@@ -55,12 +55,12 @@ onSearchChange(value: string) {
 
 
   containers = [
-    { name: 'AI Engine', description: 'Processes and analyzes large data intelligently.' },
-    { name: 'Vision Module', description: 'Recognizes images, faces, and real-world objects.' },
-    { name: 'Chat Core', description: 'Builds human-like conversational systems.' },
-    { name: 'Automation Hub', description: 'Automates workflows and repetitive tasks.' },
-    { name: 'Data Processor', description: 'Cleans and transforms datasets efficiently.' },
-    { name: 'Speech System', description: 'Converts speech to text and vice versa.' },
+    { name: 'AI Engine', discription: 'Processes and analyzes large data intelligently.' },
+    { name: 'Vision Module', discription: 'Recognizes images, faces, and real-world objects.' },
+    { name: 'Chat Core', discription: 'Builds human-like conversational systems.' },
+    { name: 'Automation Hub', discription: 'Automates workflows and repetitive tasks.' },
+    { name: 'Data Processor', discription: 'Cleans and transforms datasets efficiently.' },
+    { name: 'Speech System', discription: 'Converts speech to text and vice versa.' },
   ];
 
 }
