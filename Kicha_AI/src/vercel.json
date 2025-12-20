@@ -1,10 +1,10 @@
 {
   "version": 2,
   "builds": [
-    { "src": "dist/KICHA_AI/server/server.mjs", "use": "@vercel/node" },
-    { "src": "dist/KICHA_AI/browser/**", "use": "@vercel/static" }
+    { "src": "dist/Kicha_AI/server/server.mjs", "use": "@vercel/node" },
+    { "src": "dist/Kicha_AI/browser/**", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "dist/KICHA_AI/server/server.mjs" }
+    { "src": "/(.*)", "dest": "dist/Kicha_AI/server/server.mjs" }
   ]
 }
