@@ -29,5 +29,17 @@ getChatHistory() {
     
 }
 
+ kichahome = true;
+  kichacontainer = false;
+  kichaSettings = false;
+  kichaContact = false;
+getpagedata(){
+  const data ={
+     kichahome : true,
+  kichacontainer : false,
+  kichaSettings : false,
+  kichaContact : false,
+  }
+}
   
 }
