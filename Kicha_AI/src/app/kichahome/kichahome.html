@@ -1,44 +1,19 @@
-<ng-container >
-    <div style="background-color: rgba(0, 0, 0, 0.788);">
+<div class="total_bar">
+  <div class="navbar">
+    <h2 style="margin-left: 10px;">TOPICS</h2>
+    <div *ngFor="let content of navbar_content">
 
+      <h3 class="content_topic"(click)="content_item(content.item)">{{content.item}}</h3>
 
-<section class="hero">
-  <h1 class="title">KICHA AI</h1>
-  <p class="subtitle">
-    Welcome to <strong>KICHA AI</strong> — your intelligent assistant for learning, building, 
-    and innovating faster. Explore advanced AI-powered tools, generate ideas, 
-    and bring your creativity to life effortlessly.
-  </p>
-</section>
-<section class="develop-section">
-  <h2 class="section-title">What We Can Develop</h2>
-  <p class="section-desc">
-    KICHA AI helps you create smart and scalable solutions using modern technology and AI innovation.
-  </p>
-
-  <div class="cards">
-    <div class="card">
-      <h3>🤖 AI Chatbots</h3>
-      <p>Build intelligent chat assistants that understand users and respond naturally in real-time.</p>
-    </div>
-
-    <div class="card">
-      <h3>🌐 Web Applications</h3>
-      <p>Design and develop fast, responsive web applications powered by Angular, React, or Vue.</p>
-    </div>
-
-    <div class="card">
-      <h3>📱 Mobile Apps</h3>
-      <p>Create powerful mobile applications using Ionic, Flutter, or native frameworks.</p>
-    </div>
-
-    <div class="card">
-      <h3>⚙️ Automation Tools</h3>
-      <p>Automate your workflows with smart AI scripts, APIs, and integration solutions.</p>
     </div>
   </div>
-</section>
+
+  <div class="content_show" style="background-color: rgba(0, 0, 0, 0.788);">
+
+    <app-introduction class="content_data" *ngIf="mode === 'Introduction'">
+
+    </app-introduction>
+
+  </div>
 
 </div>
-
-</ng-container>

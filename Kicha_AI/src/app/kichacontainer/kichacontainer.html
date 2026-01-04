@@ -12,7 +12,7 @@
 
   <!-- 🧱 Container cards -->
   <div class="container-grid">
-    <div
+    <div (click)="opencontainer(item.name)"
       class="container-card"
       *ngFor="let item of containers "
     >

@@ -11,13 +11,17 @@
 
 /* Navbar container */
 .navbar {
-  background-color: #1e3a8a; /* Deep blue */
+  background: #224aa8;
+
+
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 14px 30px;
-  position: relative;
+      position: fixed;
+    width: 100%;
+    margin-top: -85px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 

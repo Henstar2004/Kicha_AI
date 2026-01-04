@@ -1,72 +1,47 @@
-.hero {
-  text-align: center;
- 
-  padding: 40px 20px;
-  color: #1e3a8a;
-}
+.navbar{
 
-.title {
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-}
+display:flex;
+flex-direction: column;
+width: 20%;
+background-color: black;
+color: aliceblue;
+overflow-y: auto;
+max-height: 90vh;
 
-.subtitle {
-  font-size: 1.1rem;
-  color: #374151;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-.develop-section {
-  text-align: center;
-  padding: 60px 20px;
 
 }
 
-.section-title {
-  font-size: 2rem;
-  color: #1e3a8a;
-  font-weight: 700;
-  margin-bottom: 10px;
+.total_bar{
+
+display:flex;
+flex-direction: row;
+
+
+
+}
+.content_show{
+
+    display: flex;
+   width: 80%;
+    justify-self: flex-end;
+    overflow-y: auto;
+    max-height: 90vh;
 }
 
-.section-desc {
-  color: #4b5563;
-  font-size: 1.1rem;
-  margin-bottom: 40px;
-}
+.content_data{
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+width:100%;
 
-.card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+.content_topic{
+  color: aliceblue;
+  padding: 10px;
+  margin: 0px;
+  border-bottom: solid 0.5px;
+  
 }
-
-.card h3 {
-  color: #1e3a8a;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-
-.card p {
-  color: #374151;
-  font-size: 0.95rem;
-  line-height: 1.6;
+.content_topic:hover{
+  color: rgb(45, 145, 232);
+ background-color: rgb(109, 113, 117);
+  
 }

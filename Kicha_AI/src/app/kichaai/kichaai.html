@@ -16,19 +16,15 @@
     <span class="bar"></span>
   </div>
 </nav>
-<div  *ngIf="kichahome">
-<app-kichahome ></app-kichahome>
-</div>
+<div style="margin-top: 85px;" >
+<app-kichahome  *ngIf="kichahome"></app-kichahome>
 
 
-<div *ngIf="kichacontainer">
-  <app-kichacontainer></app-kichacontainer>
-</div>
+  <app-kichacontainer *ngIf="kichacontainer"></app-kichacontainer>
 
-<div *ngIf="kichaSettings">
-  <app-kichasettings></app-kichasettings>
-</div>
 
-<div *ngIf="kichaContact">
-  <app-kichacontact></app-kichacontact>
+  <app-kichasettings *ngIf="kichaSettings"></app-kichasettings>
+
+
+  <app-kichacontact *ngIf="kichaContact"></app-kichacontact>
 </div>
