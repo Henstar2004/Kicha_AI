@@ -1,0 +1,55 @@
+<div class="login_page">
+<div class="container">
+  <div class="card">
+
+    <!-- <h2 id="title">Login</h2> -->
+
+   
+      @if(mode==='email'){<div class="button"><div class="phase1"><div style="display: flex;">
+        <img src="assets/preview_bg.png" >
+         <h2 id="title">Kicha</h2></div>
+         <h3 id="title">Enter Kmail ID</h3>
+      </div><div class="phase1">
+        <div class="input-group">
+        <input type="text" required>
+        <label>Kmail or Phone</label>
+      </div>
+      
+       <p class="toggle">
+        <span id="toggleText">New user?</span>
+        <a href="#" onclick="toggleMode()">Create account</a>
+      </p>
+      <button (click)="next()" class="btn">{{login_button}}</button>
+      </div>
+      </div>
+    }
+       
+
+      @else{
+        <div class="button"><div class="phase2"><div style="display: flex;">
+          <img src="assets/preview_bg.png" alt="">
+         <h2 id="title">Kicha</h2></div>
+         <h3 id="title">Enter Kmail Password</h3>
+      </div><div class="phase2">
+        <div class="input-group">
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+      <p class="toggle">
+        <span id="toggleText">Issuse?</span>
+        <a href="#" onclick="anotherwayMode()">Try Another Way </a>
+      </p>
+
+      <!-- Register only -->
+      <!-- <div class="input-group hidden" id="emailBox">
+        <input type="email">
+        <label>Email</label>
+      </div> -->
+
+      
+      <button (click)="login_function()" class="btn">{{login_button}}</button></div>
+    
+
+  </div>}
+</div>
+</div>

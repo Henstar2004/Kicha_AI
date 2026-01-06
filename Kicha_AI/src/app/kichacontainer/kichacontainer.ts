@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Openai } from '../openai';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-kichacontainer',
@@ -11,10 +12,14 @@ import { Openai } from '../openai';
 })
 export class Kichacontainer {
   chats: any[] = [];
+  isMenuOpen= false;
+
+mode="Introduction"
+user_name="K"
 ngOnInit(){
 this.getChatHistory()
 }
-  constructor(private openai: Openai) {
+  constructor(private openai: Openai,private route:Router) {
 
   }
 
@@ -66,5 +71,19 @@ onSearchChange(value: string) {
   opencontainer(name:any){
 
   }
+   content_item(an:any){
+
+
+    this.mode=an;
+  }
+  selectMode(mode: string) {
+  this.route.navigate([mode]);
+}
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
 }
+
+

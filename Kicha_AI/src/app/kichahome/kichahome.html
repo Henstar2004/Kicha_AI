@@ -1,10 +1,37 @@
+<nav class="navbar">
+  <div style="display: flex; justify-content: center;gap: 10px;align-items: center;">
+  <img  class="kicha_logo"src="assets/kicha_logo.png" alt="">
+  <div class="logo">KICHA AI</div>
+</div>
+  <ul class="nav-links" [class.active]="isMenuOpen">
+   <li><a (click)="selectMode('home')">Home</a></li>
+    <li><a (click)="selectMode('container')">Container</a></li>
+    <li><a (click)="selectMode('settings')">Settings</a></li>
+    <li><a (click)="selectMode('contact')">Contact</a></li>
+  </ul>
+
+  <div class="menu-toggle" (click)="toggleMenu()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</nav>
 <div class="total_bar">
-  <div class="navbar">
-    <h2 style="margin-left: 10px;">TOPICS</h2>
-    <div *ngFor="let content of navbar_content">
+  <div class="navbar_home">
+    <h2 style="margin-left: 10px;padding-top: 20px;padding-bottom: 20px;">TOPICS</h2>
+    <div class="topic">
+    <div [ngClass]="{ 'active': selectedIndex === i ,
+      'even': (i + 1) % 2 === 0 }"
+    
+     (click)="selectedIndex = i" *ngFor="let content of navbar_content index as i" class="fixed-height">
 
       <h3 class="content_topic"(click)="content_item(content.item)">{{content.item}}</h3>
 
+    </div>
+    </div>
+    <div class="icon">
+    <div class="circle">{{user_name}}</div>
+     <i class="bi bi-gear-fill"></i>
     </div>
   </div>
 

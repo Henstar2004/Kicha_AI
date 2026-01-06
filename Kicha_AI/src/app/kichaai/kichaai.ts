@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { Kichacontact } from '../kichacontact/kichacontact';
 import { Kichacontainer } from '../kichacontainer/kichacontainer';
 import { Kichasettings } from '../kichasettings/kichasettings';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-kichaai',
@@ -18,23 +19,26 @@ import { Kichasettings } from '../kichasettings/kichasettings';
   styleUrl: './kichaai.scss',
 })
 export class Kichaai {
+  constructor(private route:Router){}
   kichahome = true;
   kichacontainer = false;
   kichaSettings = false;
   kichaContact = false;
 
   selectMode(mode: string) {
-    // Reset all
-    this.kichahome = false;
-    this.kichacontainer = false;
-    this.kichaSettings = false;
-    this.kichaContact = false;
 
-    // Activate selected
-    if (mode === 'home') this.kichahome = true;
-    else if (mode === 'container') this.kichacontainer = true;
-    else if (mode === 'settings') this.kichaSettings = true;
-    else if (mode === 'contact') this.kichaContact = true;
+    this.route.navigate([mode]);
+    // Reset all
+    // this.kichahome = false;
+    // this.kichacontainer = false;
+    // this.kichaSettings = false;
+    // this.kichaContact = false;
+
+    // // Activate selected
+    // if (mode === 'home') this.kichahome = true;
+    // else if (mode === 'container') this.kichacontainer = true;
+    // else if (mode === 'settings') this.kichaSettings = true;
+    // else if (mode === 'contact') this.kichaContact = true;
   }
   isMenuOpen = false;
 
